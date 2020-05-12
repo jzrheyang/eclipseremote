@@ -1,5 +1,5 @@
 package com.jzr.demo;
-
+//Ìí¼Ó×¢ÊÍ ¼ªÖÇÈÙ2020.05.12
 public class Child extends Parent{
 public static int t=childStaticMethod2();
 {
