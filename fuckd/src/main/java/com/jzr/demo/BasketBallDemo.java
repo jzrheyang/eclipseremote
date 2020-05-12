@@ -3,18 +3,22 @@ package com.jzr.demo;
 import java.util.Arrays;
 //jzr2020.04.28
 public class BasketBallDemo {
-	//´æ´¢³¡ÉÏÇòÔ±µÄÇòÒÂºÅÂë22
+
+	//å­˜å‚¨åœºä¸Šçƒå‘˜çš„çƒè¡£å·ç 22
+
+	//ç€›æ¨ºåé¦è½°ç¬‚éå†¨æ†³é¨å‹­æ‚†ç›ï½…å½¿é®ï¿½33
+
 	private static Integer[] players=null;
-	// ³¡ÉÏÇòÔ±¸öÊı
+	// é¦è½°ç¬‚éå†¨æ†³æ¶“î…æšŸ
 	private static  int size=0;
-	// ³õÊ¼»¯
+	// é’æ¿†îé–ï¿½
 	private static void init(Integer initialCapacity) {
 		players=new Integer[initialCapacity];
 		// Integer[] player=new Integer[5];	
 	}
-	// Ìí¼Ó
+	// å¨£è¯²å§
 	private static void add(Integer playNum) {
-		// ÅĞ¶ÏºÍÀ©Èİ
+		// é’ã‚†æŸ‡éœå±¾å¢¿ç€¹ï¿½
 		if(size==players.length) {
 		Integer []temp=Arrays.copyOf(players, players.length*2);
 		   players=temp;
@@ -51,10 +55,10 @@ public class BasketBallDemo {
 	
 	
 	public static void main(String[] args) {
-		//Ïàµ±ÓÚInteger [] player=new Interger[5];
+		//é©ç¨¿ç¶‹æµœå¶ªnteger [] player=new Interger[5];
 		sop();
 		init(5);
-		// Ìí¼Ó
+		// å¨£è¯²å§
 //		sop();
 		add(11);
 		add(22);
